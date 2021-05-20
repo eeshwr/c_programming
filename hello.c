@@ -15,9 +15,20 @@
  *
  * =====================================================================================
  */
-#include <stdlib.h>
-int main(){
-    printf("hello world");
 
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a, b, sum;
+    printf("\n enter a:");
+    scanf("%d", &a);
+    printf("\n enter b:");
+    scanf("%d", &b);
+    sum=a+b;
+    printf("sum of the number is %d", sum);
+    getch();
+    
+    
 }
 
