@@ -19,7 +19,12 @@
 
 #include<stdio.h>
 #include<conio.h>
+int print_sum();
 void main()
+{
+   print_sum(); 
+}
+int print_sum()
 {
     int a, b, sum;
     printf("\n enter a:");
@@ -29,7 +34,5 @@ void main()
     sum=a+b;
     printf("sum of the number is %d", sum);
     getch();
-    
-    
 }
 
