@@ -40,7 +40,11 @@ void main()
 		
 		else
 		{
-			if( pow(a,2)=pow(b,2)+pow(c,2) || pow(b,2)=pow(a,2)+pow(c,2) || pow(c,2)=pow(b,2)+pow(a,2))
+			a_square = pow(a,2);
+			b_square = pow(b,2);
+			c_square = pow(c,2);
+			
+			if((a_square == (b_square+c_square)) || (b_square == (a_square + c_square)) || (c_square == b_square+a_square)))
 				printf("\n the triangle is right angled traingle");
 			else
 				printf("\n the triangle is scalene");
