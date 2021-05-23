@@ -24,7 +24,7 @@ equilateral, scalene or right angled triangle.
 #include<conio.h>
 void main()
 {
-	int a, b , c;
+	int a, b , c ,a_square, b_square, c_square;
 	printf("\n enter side a: \t");
 	scanf("%d", &a);
 	printf("\n enter side b: \t");
@@ -44,7 +44,7 @@ void main()
 			b_square = pow(b,2);
 			c_square = pow(c,2);
 			
-			if((a_square == (b_square+c_square)) || (b_square == (a_square + c_square)) || (c_square == b_square+a_square)))
+			if((a_square == (b_square+c_square)) || (b_square == (a_square + c_square)) || (c_square == (b_square+a_square)))
 				printf("\n the triangle is right angled traingle");
 			else
 				printf("\n the triangle is scalene");
