@@ -24,31 +24,35 @@ equilateral, scalene or right angled triangle.
 #include<conio.h>
 void main()
 {
-	int a, b , c ,a_square, b_square, c_square;
-	printf("\n enter side a: \t");
-	scanf("%d", &a);
-	printf("\n enter side b: \t");
-	scanf("%d", &b);
-	printf("\n enter side c: \t");
-	scanf("%d", &c);
-	if(a==b && b==c && c==a)
-		printf("\n the triangle is equillibrium");
-	else
+	int dl, phy , math , cprogram, iit, per;
+	printf("\n enter marks of dl: \t");
+	scanf("%d", &dl);
+	printf("\n enter marks of phy: \t");
+	scanf("%d", &phy);
+	printf("\n enter marks of math: \t");
+	scanf("%d", &math);
+	printf("\n enter marks of cprogram: \t");
+	scanf("%d", &cprogram);
+	printf("\n enter marks of iit: \t");
+	scanf("%d", &iit);
+	per=(dl+phy+math+cprogram+iit)/5;
+	if(per>=80)
 	{
-		if(a==b || b==c || c==a)
-			printf("\n the triangle is isosceles");
-		
-		else
-		{
-			a_square = pow(a,2);
-			b_square = pow(b,2);
-			c_square = pow(c,2);
-			
-			if((a_square == (b_square+c_square)) || (b_square == (a_square + c_square)) || (c_square == (b_square+a_square)))
-				printf("\n the triangle is right angled traingle");
-			else
-				printf("\n the triangle is scalene");
-		}
+		printf("\n distinction");
 	}
+	else if(per<80 && per>=70)
+	{
+		printf("\n first division");
+	}
+	else if(per<70 && per>=60)
+	{
+		printf("\n second division");
+	}
+	else if(per<60 && per>=50)
+	{
+		printf("\n third division");
+	}
+		
+	
 }
 
