@@ -1,20 +1,23 @@
-/*Enter any 10 number and display only these number which are prime.*/
+/*Enter any 10 number and display only these number which are prime.   
+
+Two numbers are entered through the keyboard. Write a program
+to find the value of one number raised to the power of another.*/
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
 int main()
 {
-	int a,i;
-	printf("\n enter the number between 1 to 100: ");
+	int a, b, i,x;
+	printf("\n enter the number a: ");
 	scanf("%d", &a);
+	printf("\n enter the number b: ");
+	scanf("%d", &b);
 	i=1;
-	while(i<=100){
-		if(a%i==0){
-			printf("the factorial is %d\n", i);
-		}
-		i++;
+	x=b;
+	while(b!=0){
+		i=i*a;
+		b=b-1;
 	}
-	return 0;
-	
+	printf("%d",i);
  	
 }
