@@ -16,19 +16,27 @@ int main()
 		num=a%10;
 		n=1;
 		while(num>0){
-			n=n*num;
-			num=num-1;
-			printf("\n the number is %d", num);
+			if(num=0){
+				n=0;
+				break;
+			}
+			else{
+				n=n*num;
+				num=num-1;
+			}
+			
+			
 		}
 		sum=sum+n;
 		a=a/10;
 		
 	}
-	//if(sum!=a){
-	//		printf("\n the number is not armstrong number");
-	//	}
-	//else{
-	//		printf("\n the number is armstrong number");
-	//	}
+	printf("\n the number is %d", sum);
+	if(sum!=a){
+			printf("\n the number is not armstrong number");
+		}
+	else{
+			printf("\n the number is armstrong number");
+		}
 	return 0;
 }
