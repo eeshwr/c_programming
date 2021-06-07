@@ -7,17 +7,28 @@ to find the value of one number raised to the power of another.*/
 #include<math.h>
 int main()
 {
-	int a, b, i,x;
-	printf("\n enter the number a: ");
+	int a, num, n, sum;
+	printf("\n enter the number: ");
 	scanf("%d", &a);
-	printf("\n enter the number b: ");
-	scanf("%d", &b);
-	i=1;
-	x=b;
-	while(b!=0){
-		i=i*a;
-		b=b-1;
+	
+	sum=0;
+	while(a>0){
+		num=a%10;
+		n=1;
+		while(num>0){
+			n=n*num;
+			num=num-1;
+			printf("\n the number is %d", num);
+		}
+		sum=sum+n;
+		a=a/10;
+		
 	}
-	printf("%d",i);
- 	
+	//if(sum!=a){
+	//		printf("\n the number is not armstrong number");
+	//	}
+	//else{
+	//		printf("\n the number is armstrong number");
+	//	}
+	return 0;
 }
